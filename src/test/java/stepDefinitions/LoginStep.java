@@ -1,10 +1,6 @@
 package stepDefinitions;
 
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import managers.WebDriverSingleton;
-import org.openqa.selenium.WebDriver;
 import pages.LoginPage;
 
 public class LoginStep {

@@ -6,7 +6,7 @@ Feature: Fonctionnalite de connexion
 
   @Passant
   Scenario: Login cas passant
-    When I login as "darylyopmail" "W3schools!"
+    When I login as "daryl@yopmail.com" "W3schools!"
     Then I should be at the home page
 
   @Non-passant

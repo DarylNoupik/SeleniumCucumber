@@ -4,14 +4,13 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 import managers.WebDriverSingleton;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 @CucumberOptions(
         features = "src/test/resources/features",
         glue = {"stepDefinitions"},
-        tags="@login",
+        tags="@login and @Passant",
         plugin = {"pretty",
                  "html:target/cucumber-reports"
         }

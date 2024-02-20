@@ -8,13 +8,13 @@ public class RegisterPage extends Page {
     WebElement inputEmail ;
     @FindBy(id="new-password")
     WebElement inputPassword ;
-    @FindBy(className = "Button_button__URNp+ Button_primary__d2Jt3 Button_fullwidth__0HLEu")
+    @FindBy(css = ".Button_button__URNp+.Button_primary__d2Jt3 Button_fullwidth__0HLEu")
     WebElement registerButton ;
     @FindBy(id="modal_first_name")
     WebElement inputFirstName ;
     @FindBy(id="modal_last_name")
     WebElement inputLastName ;
-    @FindBy(className = "Button_button__URNp+ Button_primary__d2Jt3 Button_fullwidth__0HLEu")
+    @FindBy(css = ".Button_button__URNp+.Button_primary__d2Jt3 Button_fullwidth__0HLEu")
     WebElement continueButton ;
 
     public void writeEmail(String email){
