@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class Page {
     protected final WebDriver driver ;
-    protected  String BaseUrl ;
+
     protected Page(){
         this.driver = WebDriverSingleton.getInstance();
         PageFactory.initElements(driver,this);

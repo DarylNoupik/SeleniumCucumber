@@ -5,7 +5,7 @@ Feature: Deconnexion Utilisateur
   personnelles
 
   Scenario: Deconnexion
-    Given je suis connecte avec mon compte
-    When  je me deconnecte de mon compte
-    Then je suis redirige sur la page d'acceuil
-    And mes informations personnelles ne sont plus accessibles
+    Given I am on the login page
+    And I login as "daryl@yopmail.com" "W3schools!"
+    When I logout
+    Then I am on the login page

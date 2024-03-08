@@ -12,11 +12,11 @@ public class LoginPage extends Page {
      WebElement connexionButton ;
      
 
-     public void writeEmail(String Email){
-          writeText(email,Email);
+     public void writeEmail(String value){
+          writeText(email,value);
      }
-     public void writePassword(String Password){
-          writeText(password, Password);
+     public void writePassword(String value){
+          writeText(password, value);
      }
      public void performLogin(){
           clickOn(connexionButton);

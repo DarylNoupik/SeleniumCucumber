@@ -10,7 +10,7 @@ import org.testng.annotations.BeforeMethod;
 @CucumberOptions(
         features = "src/test/resources/features",
         glue = {"stepDefinitions"},
-        tags="@login and @Passant",
+        tags="@Search",
         plugin = {"pretty",
                  "html:target/cucumber-reports"
         }
@@ -26,6 +26,6 @@ public class TestRunner extends AbstractTestNGCucumberTests {
     }
     @AfterMethod
     public void teardown(){
-        WebDriverSingleton.destroy();
+       WebDriverSingleton.destroy();
     }
 }
